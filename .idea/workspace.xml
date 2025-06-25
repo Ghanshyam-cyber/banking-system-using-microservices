@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b8b884ee-223e-4858-b8cb-f65104977e5e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/controller/ManagerRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/controller/ManagerRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/Books.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/ManagerProfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/ManagerProfile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/security/SecurityConfig.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/security/SecurityConfig.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/service/ManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/service/ManagerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/service/ManagerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/service/ManagerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Cards/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Cards/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Cards/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Cards/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Header/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Header/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Tables/BooksTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Tables/BooksTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Tables/UsersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Tables/UsersTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/main.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2yzcGqOWoelo38IAzqZBXFTlV6v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Fresher's/Projects/MIcroservices Projects/banking-system-with-microservices"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8b884ee-223e-4858-b8cb-f65104977e5e" name="Changes" comment="" />
+      <created>1750840750220</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750840750220</updated>
+    </task>
+    <servers />
+  </component>
+</project>
