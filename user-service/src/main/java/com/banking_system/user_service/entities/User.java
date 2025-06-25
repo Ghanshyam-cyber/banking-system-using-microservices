@@ -18,7 +18,10 @@ public class User {
     private String permanentAddress;
     private String city;
 
-    public User(String firstName, String lastName, Long mobileNumber, String currentAddress, String permanentAddress, String city) {
+    public User(){}
+
+    public User(Long id,String firstName, String lastName, Long mobileNumber, String currentAddress, String permanentAddress, String city) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.mobileNumber = mobileNumber;
