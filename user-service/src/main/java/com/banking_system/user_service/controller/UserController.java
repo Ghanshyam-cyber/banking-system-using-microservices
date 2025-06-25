@@ -50,6 +50,25 @@ public class UserController {
     }
 
 
+    @DeleteMapping("/{userId}")
+    public ResponseEntity<Void> deleteUserById(@PathVariable Long userId){
+        try {
+            User user = userService.findById(userId);
+            if(user ==  null){
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }else {
+                userService.deleteById(userId);
+                return  new ResponseEntity<>(HttpStatus.NO_CONTENT);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Error deleting user with userId: " + userId);
+            System.out.println("message: " + e.getMessage());
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+
 
 
 

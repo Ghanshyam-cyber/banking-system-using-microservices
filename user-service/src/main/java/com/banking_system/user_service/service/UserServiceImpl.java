@@ -29,4 +29,9 @@ public class UserServiceImpl implements UserService{
     public User findById(Long theId) {
         return userRepo.findById(theId).orElseThrow(()-> new RuntimeException("User not fount with id: " + theId));
     }
+
+    @Override
+    public void deleteById(Long theId) {
+        userRepo.deleteById(theId);
+    }
 }
