@@ -2,6 +2,8 @@ package com.banking_system.user_service.service;
 
 import com.banking_system.user_service.entities.User;
 import com.banking_system.user_service.repository.UserRepo;
+import com.banking_system.user_service.service.client.AccountClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,9 +13,14 @@ public class UserServiceImpl implements UserService{
 
     private UserRepo userRepo;
 
-    public UserServiceImpl(UserRepo userRepo){
+    private AccountClient accountClient;
+
+    @Autowired
+    public UserServiceImpl(UserRepo userRepo, AccountClient accountClient) {
         this.userRepo = userRepo;
+        this.accountClient = accountClient;
     }
+
 
     @Override
     public User saveUser(User theUser) {
@@ -34,4 +41,6 @@ public class UserServiceImpl implements UserService{
     public void deleteById(Long theId) {
         userRepo.deleteById(theId);
     }
+
+
 }

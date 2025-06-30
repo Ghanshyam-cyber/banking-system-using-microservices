@@ -3,6 +3,8 @@ package com.banking_system.user_service.controller;
 
 import com.banking_system.user_service.entities.User;
 import com.banking_system.user_service.service.UserService;
+import com.banking_system.user_service.service.client.AccountClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,9 +16,20 @@ import java.util.List;
 public class UserController {
 
     private UserService userService;
+    private AccountClient accountClient;
 
-    public UserController(UserService userService){
+    @Autowired
+    public UserController(UserService userService, AccountClient accountClient) {
         this.userService = userService;
+        this.accountClient = accountClient;
+    }
+
+//    CHECK BALANCE
+    @GetMapping("/{userId}/balance")
+    public ResponseEntity<Double> checkBalance(@PathVariable Long userId){
+        Double getBalance = accountClient.checkBalance(userId);
+        
+        return ResponseEntity.ok(getBalance);
     }
 
     @GetMapping("")

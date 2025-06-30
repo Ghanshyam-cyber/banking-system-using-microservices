@@ -29,4 +29,12 @@ public class AccountServiceImpl implements AccountService{
     public Account getByAccountNumber(Long theId) {
         return accountRepo.findById(theId).orElseThrow( () ->  new RuntimeException("Accont not found with account number: " + theId));
     }
+
+    @Override
+    public double checkBalance(Long accountHolderId) {
+        Account account = accountRepo.findByAccountHolderId(accountHolderId);
+        if (account == null){ throw new RuntimeException("User not Found with userId: " + accountHolderId);}
+        return account.getBalance();
+    }
+
 }

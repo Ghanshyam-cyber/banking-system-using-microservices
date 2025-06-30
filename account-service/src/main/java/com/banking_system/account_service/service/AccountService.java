@@ -12,4 +12,6 @@ public interface AccountService {
 
     Account getByAccountNumber(Long theId);
 
+    double checkBalance(Long accountHolderId);
+
 }

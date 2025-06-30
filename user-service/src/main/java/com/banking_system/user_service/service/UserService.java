@@ -14,4 +14,6 @@ public interface UserService {
 
     void deleteById(Long theId);
 
+//    double checkBalance(Long user,double balance);
+
 }

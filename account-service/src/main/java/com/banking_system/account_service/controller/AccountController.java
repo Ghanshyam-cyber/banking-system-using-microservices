@@ -4,6 +4,7 @@ import com.banking_system.account_service.entity.Account;
 import com.banking_system.account_service.enums.AccountType;
 import com.banking_system.account_service.enums.ActiveType;
 import com.banking_system.account_service.service.AccountService;
+import jakarta.ws.rs.Path;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -52,6 +53,16 @@ public class AccountController {
         try {
             Account findByNumber = accountService.getByAccountNumber(accountNumber);
             return ResponseEntity.ok(findByNumber);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping("/user/balance/{userId}")
+    public ResponseEntity<Double> getBalanceByUserId(@PathVariable Long userId){
+        try {
+            Double checkBalance = accountService.checkBalance(userId);
+            return ResponseEntity.ok(checkBalance);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
