@@ -5,6 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8b884ee-223e-4858-b8cb-f65104977e5e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/enums/AccountType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/enums/ActiveType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/repository/AccountRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/service/AccountServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/controller/ManagerRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/controller/ManagerRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/Books.java" afterDir="false" />
@@ -22,6 +29,10 @@
       <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Tables/UsersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Tables/UsersTable.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Layout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +43,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -49,13 +61,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AccountServiceApplication.executor": "Run",
     "Application.ApiGatewayApplication.executor": "Run",
     "Application.EurekaSeverApplication.executor": "Run",
     "Application.UserServiceApplication.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "account-service",
     "last_opened_file_path": "D:/Fresher's/Projects/MIcroservices Projects/banking-system-with-microservices",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
@@ -63,7 +76,20 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.UserServiceApplication">
+  <component name="RunManager" selected="Application.ApiGatewayApplication">
+    <configuration name="AccountServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.banking_system.account_service.AccountServiceApplication" />
+      <module name="account-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.banking_system.account_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.banking_system.api_gateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -105,9 +131,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UserServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.AccountServiceApplication" />
         <item itemvalue="Application.EurekaSeverApplication" />
+        <item itemvalue="Application.UserServiceApplication" />
       </list>
     </recent_temporary>
   </component>
