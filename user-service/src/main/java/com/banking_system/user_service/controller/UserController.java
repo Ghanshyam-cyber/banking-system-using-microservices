@@ -1,7 +1,9 @@
 package com.banking_system.user_service.controller;
 
 
+import com.banking_system.user_service.entities.Transaction;
 import com.banking_system.user_service.entities.User;
+import com.banking_system.user_service.entities.UsersWithAccountDetails;
 import com.banking_system.user_service.service.UserService;
 import com.banking_system.user_service.service.client.AccountClient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,12 +26,29 @@ public class UserController {
         this.accountClient = accountClient;
     }
 
+//    Balance Transfer
+    @PostMapping("/transfer")
+    public ResponseEntity<String> transferMoney(@RequestBody Transaction transaction){
+        String response = accountClient.transferById(transaction);
+        return ResponseEntity.ok(response);
+    }
+
 //    CHECK BALANCE
     @GetMapping("/{userId}/balance")
     public ResponseEntity<Double> checkBalance(@PathVariable Long userId){
         Double getBalance = accountClient.checkBalance(userId);
         
         return ResponseEntity.ok(getBalance);
+    }
+
+    @GetMapping("/details")
+    public ResponseEntity<List<UsersWithAccountDetails>> getAllDetailsOfUser(){
+        try{
+            List<UsersWithAccountDetails> usersWithDetails = userService.getAllAccountDetailsWithUsers();
+            return ResponseEntity.ok(usersWithDetails);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @GetMapping("")

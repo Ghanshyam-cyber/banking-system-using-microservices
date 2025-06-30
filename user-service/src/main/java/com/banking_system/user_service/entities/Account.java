@@ -1,8 +1,5 @@
 package com.banking_system.user_service.entities;
 
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-
 public class Account {
     private Long accountHolderId;
     private double balance;

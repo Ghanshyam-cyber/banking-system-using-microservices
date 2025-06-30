@@ -1,6 +1,7 @@
 package com.banking_system.account_service.controller;
 
 import com.banking_system.account_service.entity.Account;
+import com.banking_system.account_service.entity.Transaction;
 import com.banking_system.account_service.enums.AccountType;
 import com.banking_system.account_service.enums.ActiveType;
 import com.banking_system.account_service.service.AccountService;
@@ -20,7 +21,25 @@ public class AccountController {
         this.accountService = accountService;
     }
 
+//    getting list of accounts by user id
+    @GetMapping("/user/{userId}")
+    public ResponseEntity<List<Account>> getAccountByUserId(@PathVariable Long userId){
+        try {
+            List<Account> newList = accountService.getAccountByUserId(userId);
+            return ResponseEntity.ok(newList);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 
+
+//    TRANSFER BALANCE
+    @PostMapping("/transfer")
+    public ResponseEntity<String> transferMoney(@RequestBody Transaction transaction){
+        accountService.transfer(transaction.getSenderId(),
+        transaction.getReceiverId(),transaction.getAmount());
+        return ResponseEntity.ok("Transaction Successfull");
+    }
 
     @PostMapping("")
     public ResponseEntity<Account> saveAccount(@RequestBody Account account){

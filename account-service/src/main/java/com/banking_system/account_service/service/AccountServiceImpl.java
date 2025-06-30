@@ -37,4 +37,31 @@ public class AccountServiceImpl implements AccountService{
         return account.getBalance();
     }
 
+    @Override
+    public void transfer(Long senderId, Long receiverId, Double amount) {
+        Account sender = accountRepo.findByAccountHolderId(senderId);
+        Account receiver = accountRepo.findByAccountHolderId(receiverId);
+        if(sender == null || receiver == null){
+            throw new RuntimeException("Sender & Receiver  Not Found");
+        }
+        if ( amount > sender.getBalance()){
+            throw new RuntimeException("Insufficient Balance");
+        }
+
+        sender.setBalance(sender.getBalance() - amount);
+        receiver.setBalance(receiver.getBalance() + amount);
+
+        accountRepo.save(sender);
+        accountRepo.save(receiver);
+    }
+
+    @Override
+    public List<Account> getAccountByUserId(Long accountHolderId) {
+        Account account = accountRepo.findByAccountHolderId(accountHolderId);
+        if(account == null){
+            throw new RuntimeException("Account not found for userId: " + accountHolderId);
+        }
+        return accountRepo.getAccountByAccountHolderId(accountHolderId);
+    }
+
 }

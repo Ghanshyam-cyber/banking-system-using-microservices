@@ -14,4 +14,8 @@ public interface AccountService {
 
     double checkBalance(Long accountHolderId);
 
+    void transfer(Long senderId, Long receiverId, Double amount);
+
+    List<Account> getAccountByUserId(Long accountHolderId);
+
 }
