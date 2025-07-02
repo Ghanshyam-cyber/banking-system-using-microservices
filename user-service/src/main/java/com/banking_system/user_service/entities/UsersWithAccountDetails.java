@@ -1,5 +1,6 @@
 package com.banking_system.user_service.entities;
 
+import java.util.Collections;
 import java.util.List;
 
 public class UsersWithAccountDetails {
@@ -10,11 +11,11 @@ public class UsersWithAccountDetails {
     private String currentAddress;
     private String permanentAddress;
     private String city;
-    private  Account account;
+    private  List<Account> account;
 
     public UsersWithAccountDetails(){}
 
-    public UsersWithAccountDetails(Long id, String firstName, String lastName, Long mobileNumber, String currentAddress, String permanentAddress, String city, Account account) {
+    public UsersWithAccountDetails(Long id, String firstName, String lastName, Long mobileNumber, String currentAddress, String permanentAddress, String city, List<Account> account) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -81,14 +82,11 @@ public class UsersWithAccountDetails {
         this.city = city;
     }
 
-    public Account getAccount() {
+    public List<Account> getAccount() {
         return account;
     }
 
-    public void setAccount(Account account) {
-        this.account = account;
-    }
-
     public void setAccount(List<Account> account) {
+        this.account = account;
     }
 }

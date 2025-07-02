@@ -8,6 +8,7 @@ import com.banking_system.user_service.service.client.AccountClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -39,18 +40,33 @@ public class UserServiceImpl implements UserService{
     public List<UsersWithAccountDetails> getAllAccountDetailsWithUsers() {
         List<User> users =  userRepo.findAll();
         return users.stream().map(user -> {
-            List<Account> account = accountClient.getAccByUserId(user.getId());
-            UsersWithAccountDetails usersWithAccountDetails = new UsersWithAccountDetails();
-            usersWithAccountDetails.setId(user.getId());
-            usersWithAccountDetails.setFirstName(user.getFirstName());
-            usersWithAccountDetails.setLastName(user.getLastName());
-            usersWithAccountDetails.setMobileNumber(user.getMobileNumber());
-            usersWithAccountDetails.setCurrentAddress(user.getCurrentAddress());
-            usersWithAccountDetails.setPermanentAddress(user.getPermanentAddress());
-            usersWithAccountDetails.setCity(user.getCity());
-            usersWithAccountDetails.setAccount(account);
+            try {
+                List<Account> account = new ArrayList<>();
+                try {
+                    account = accountClient.getAccByUserId(user.getId());
+                    // build response...
+                } catch (Exception e) {
+                    System.out.println("Error fetching account for userId: " + user.getId());
+                    e.printStackTrace();
+                    return null;
+                }
+//                List<Account> account = accountClient.getAccByUserId(user.getId());
+                UsersWithAccountDetails usersWithAccountDetails = new UsersWithAccountDetails();
+                usersWithAccountDetails.setId(user.getId());
+                usersWithAccountDetails.setFirstName(user.getFirstName());
+                usersWithAccountDetails.setLastName(user.getLastName());
+                usersWithAccountDetails.setMobileNumber(user.getMobileNumber());
+                usersWithAccountDetails.setCurrentAddress(user.getCurrentAddress());
+                usersWithAccountDetails.setPermanentAddress(user.getPermanentAddress());
+                usersWithAccountDetails.setCity(user.getCity());
+                usersWithAccountDetails.setAccount(account);
 
-            return usersWithAccountDetails;
+                return usersWithAccountDetails;
+            }catch (Exception e) {
+            System.out.println("Error fetching account for userId: " + user.getId());
+            e.printStackTrace();
+            return null;
+        }
 
         }).collect(Collectors.toList());
     }

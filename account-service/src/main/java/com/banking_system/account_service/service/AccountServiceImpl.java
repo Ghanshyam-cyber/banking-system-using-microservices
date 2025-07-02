@@ -57,10 +57,7 @@ public class AccountServiceImpl implements AccountService{
 
     @Override
     public List<Account> getAccountByUserId(Long accountHolderId) {
-        Account account = accountRepo.findByAccountHolderId(accountHolderId);
-        if(account == null){
-            throw new RuntimeException("Account not found for userId: " + accountHolderId);
-        }
+//        Account account = accountRepo.findByAccountHolderId(accountHolderId);
         return accountRepo.getAccountByAccountHolderId(accountHolderId);
     }
 

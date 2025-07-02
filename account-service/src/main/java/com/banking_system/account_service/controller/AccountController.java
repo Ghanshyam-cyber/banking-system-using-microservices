@@ -2,10 +2,7 @@ package com.banking_system.account_service.controller;
 
 import com.banking_system.account_service.entity.Account;
 import com.banking_system.account_service.entity.Transaction;
-import com.banking_system.account_service.enums.AccountType;
-import com.banking_system.account_service.enums.ActiveType;
 import com.banking_system.account_service.service.AccountService;
-import jakarta.ws.rs.Path;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
