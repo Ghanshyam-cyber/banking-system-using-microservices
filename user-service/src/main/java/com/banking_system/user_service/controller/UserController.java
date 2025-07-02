@@ -36,9 +36,12 @@ public class UserController {
 //    CHECK BALANCE
     @GetMapping("/{userId}/balance")
     public ResponseEntity<Double> checkBalance(@PathVariable Long userId){
-        Double getBalance = accountClient.checkBalance(userId);
-        
-        return ResponseEntity.ok(getBalance);
+        try {
+            Double getBalance = accountClient.checkBalance(userId);
+            return ResponseEntity.ok(getBalance);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
     }
 
     @GetMapping("/details")

@@ -23,6 +23,6 @@ public interface AccountClient {
     @PostMapping("/account/transfer")
     public String transferById(Transaction transaction);
 
-    @PostMapping("/account")
+    @PostMapping("/account/register")
     public ResponseEntity<String> createAccount(@RequestBody Account account);
 }

@@ -22,13 +22,23 @@
       <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Tables/UsersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Tables/UsersTable.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Layout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/service/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/entity/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/entity/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/entity/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/enums/ActiveType.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/enums/ActiveType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/entities/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/entities/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/entities/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/entities/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/entities/UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/entities/UserRegistration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/entities/UsersWithAccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/entities/UsersWithAccountDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/service/client/AccountClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/service/client/AccountClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/target/classes/com/banking_system/user_service/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/com/banking_system/user_service/service/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,8 +152,8 @@
       <list>
         <item itemvalue="Application.UserServiceApplication" />
         <item itemvalue="Application.AccountServiceApplication" />
-        <item itemvalue="Application.EurekaSeverApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.EurekaSeverApplication" />
       </list>
     </recent_temporary>
   </component>

@@ -29,10 +29,13 @@ public class RegistrationController {
         User user = new User();
         user.setFirstName(userRegistration.getFirstName());
         user.setLastName(userRegistration.getLastName());
+        user.setMail(userRegistration.getMail());
         user.setMobileNumber(userRegistration.getMobileNumber());
+        user.setAdharNumber(userRegistration.getAdharNumber());
         user.setCurrentAddress(userRegistration.getCurrentAddress());
+        user.setCurrentCity(userRegistration.getCurrentCity());
         user.setPermanentAddress(userRegistration.getPermanentAddress());
-        user.setCity(userRegistration.getCity());
+        user.setPermanentCity(userRegistration.getPermanentCity());
         User savedUser = userRepo.save(user);
 
         Account account = new Account();

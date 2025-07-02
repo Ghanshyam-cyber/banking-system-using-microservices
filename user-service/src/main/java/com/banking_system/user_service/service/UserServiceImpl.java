@@ -40,6 +40,7 @@ public class UserServiceImpl implements UserService{
     public List<UsersWithAccountDetails> getAllAccountDetailsWithUsers() {
         List<User> users =  userRepo.findAll();
         return users.stream().map(user -> {
+//                List<Account> account = accountClient.getAccByUserId(user.getId());
             try {
                 List<Account> account = new ArrayList<>();
                 try {
@@ -50,15 +51,13 @@ public class UserServiceImpl implements UserService{
                     e.printStackTrace();
                     return null;
                 }
-//                List<Account> account = accountClient.getAccByUserId(user.getId());
                 UsersWithAccountDetails usersWithAccountDetails = new UsersWithAccountDetails();
                 usersWithAccountDetails.setId(user.getId());
                 usersWithAccountDetails.setFirstName(user.getFirstName());
                 usersWithAccountDetails.setLastName(user.getLastName());
-                usersWithAccountDetails.setMobileNumber(user.getMobileNumber());
-                usersWithAccountDetails.setCurrentAddress(user.getCurrentAddress());
-                usersWithAccountDetails.setPermanentAddress(user.getPermanentAddress());
-                usersWithAccountDetails.setCity(user.getCity());
+                usersWithAccountDetails.setMail(user.getMail());
+                usersWithAccountDetails.setCurrentCity(user.getCurrentCity());
+                usersWithAccountDetails.setPermanentCity(user.getPermanentCity());
                 usersWithAccountDetails.setAccount(account);
 
                 return usersWithAccountDetails;

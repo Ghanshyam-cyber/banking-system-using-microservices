@@ -40,9 +40,20 @@ public class AccountController {
 
     @PostMapping("")
     public ResponseEntity<Account> saveAccount(@RequestBody Account account){
+        try{
+            Account newAccount = accountService.create(account);
+            return ResponseEntity.ok(newAccount);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PostMapping("/register")
+    public ResponseEntity<Account> saveAccountWithUser(@RequestBody Account account){
         try {
             Account newAccount = new Account();
-
+            newAccount.setAccountNumber(account.getAccountNumber());
+            newAccount.setBalance(account.getBalance());
             newAccount.setAccountHolderId(account.getAccountHolderId());
             newAccount.setAccountType(account.getAccountType());
             newAccount.setActiveType(account.getActiveType());
