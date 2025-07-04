@@ -1,4 +1,4 @@
-package com.banking_system.user_service.entities;
+package com.banking_system.user_service.dto;
 
 import lombok.*;
 

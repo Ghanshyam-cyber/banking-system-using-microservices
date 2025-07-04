@@ -18,6 +18,8 @@ public class Account {
 
     private Long accountHolderId;
 
+//    private String accountHolderName;
+
     private double balance;
 
     @Enumerated(EnumType.STRING)

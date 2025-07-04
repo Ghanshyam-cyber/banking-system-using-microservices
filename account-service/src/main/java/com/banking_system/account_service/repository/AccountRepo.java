@@ -8,4 +8,5 @@ import java.util.List;
 public interface AccountRepo extends JpaRepository<Account, Long> {
     Account findByAccountHolderId(Long accountHolderId);
     List<Account> getAccountByAccountHolderId(Long AccountHolderId);
+//    String getAccountHolderName(String accountHolderName);
 }

@@ -1,7 +1,7 @@
 package com.banking_system.user_service.service;
 
 import com.banking_system.user_service.entities.User;
-import com.banking_system.user_service.entities.UsersWithAccountDetails;
+import com.banking_system.user_service.dto.UsersWithAccountDetails;
 
 import java.util.List;
 

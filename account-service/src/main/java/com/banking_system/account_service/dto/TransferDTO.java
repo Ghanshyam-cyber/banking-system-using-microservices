@@ -1,4 +1,4 @@
-package com.banking_system.account_service.entity;
+package com.banking_system.account_service.dto;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-public class Transaction {
+public class TransferDTO {
     private Long senderId;
     private Long receiverId;
     private Double amount;

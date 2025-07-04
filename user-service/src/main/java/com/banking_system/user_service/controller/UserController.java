@@ -1,9 +1,9 @@
 package com.banking_system.user_service.controller;
 
 
-import com.banking_system.user_service.entities.Transaction;
+import com.banking_system.user_service.dto.TransactionDTO;
 import com.banking_system.user_service.entities.User;
-import com.banking_system.user_service.entities.UsersWithAccountDetails;
+import com.banking_system.user_service.dto.UsersWithAccountDetails;
 import com.banking_system.user_service.service.UserService;
 import com.banking_system.user_service.service.client.AccountClient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +28,8 @@ public class UserController {
 
 //    Balance Transfer
     @PostMapping("/transfer")
-    public ResponseEntity<String> transferMoney(@RequestBody Transaction transaction){
-        String response = accountClient.transferById(transaction);
+    public ResponseEntity<String> transferMoney(@RequestBody TransactionDTO transaction){
+        String response = accountClient.makeTransaction(transaction);
         return ResponseEntity.ok(response);
     }
 

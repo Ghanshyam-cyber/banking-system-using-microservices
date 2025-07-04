@@ -1,7 +1,9 @@
 package com.banking_system.account_service.controller;
 
+import com.banking_system.account_service.dto.TransactionDTO;
 import com.banking_system.account_service.entity.Account;
-import com.banking_system.account_service.entity.Transaction;
+import com.banking_system.account_service.dto.TransferDTO;
+import com.banking_system.account_service.entity.TransactionDetails;
 import com.banking_system.account_service.service.AccountService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -32,10 +34,20 @@ public class AccountController {
 
 //    TRANSFER BALANCE
     @PostMapping("/transfer")
-    public ResponseEntity<String> transferMoney(@RequestBody Transaction transaction){
-        accountService.transfer(transaction.getSenderId(),
-        transaction.getReceiverId(),transaction.getAmount());
-        return ResponseEntity.ok("Transaction Successfull");
+    public ResponseEntity<String> transferMoney(@RequestBody TransactionDTO transaction){
+        String responce = accountService.makeTransaction(transaction);
+        return ResponseEntity.ok(responce);
+    }
+
+//    GET TRANSACTION HISTORY
+    @GetMapping("/{accountId}/history")
+    public ResponseEntity<List<TransactionDetails>> transactionHistory(@PathVariable Long accountId){
+        try {
+            List<TransactionDetails> details = accountService.getTransactionsByAccount(accountId);
+            return ResponseEntity.ok(details);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
     @PostMapping("")

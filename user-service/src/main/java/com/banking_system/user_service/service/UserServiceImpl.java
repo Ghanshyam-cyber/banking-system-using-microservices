@@ -1,8 +1,8 @@
 package com.banking_system.user_service.service;
 
-import com.banking_system.user_service.entities.Account;
+import com.banking_system.user_service.dto.Account;
 import com.banking_system.user_service.entities.User;
-import com.banking_system.user_service.entities.UsersWithAccountDetails;
+import com.banking_system.user_service.dto.UsersWithAccountDetails;
 import com.banking_system.user_service.repository.UserRepo;
 import com.banking_system.user_service.service.client.AccountClient;
 import org.springframework.beans.factory.annotation.Autowired;
