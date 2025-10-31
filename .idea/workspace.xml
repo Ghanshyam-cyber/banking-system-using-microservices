@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8b884ee-223e-4858-b8cb-f65104977e5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/config/SwaggerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/controller/ManagerRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/controller/ManagerRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/Books.java" afterDir="false" />
@@ -28,11 +24,7 @@
       <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/config/CorsConfig.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +75,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;swaggerApi&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Fresher's/Projects/MIcroservices Projects/banking-system-with-microservices&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
