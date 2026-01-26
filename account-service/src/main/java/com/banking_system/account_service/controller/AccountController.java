@@ -32,23 +32,23 @@ public class AccountController {
     }
 
 
-//    TRANSFER BALANCE
-    @PostMapping("/transfer")
-    public ResponseEntity<String> transferMoney(@RequestBody TransactionDTO transaction){
-        String responce = accountService.makeTransaction(transaction);
-        return ResponseEntity.ok(responce);
-    }
-
-//    GET TRANSACTION HISTORY
-    @GetMapping("/{accountId}/history")
-    public ResponseEntity<List<TransactionDetails>> transactionHistory(@PathVariable Long accountId){
-        try {
-            List<TransactionDetails> details = accountService.getTransactionsByAccount(accountId);
-            return ResponseEntity.ok(details);
-        } catch (Exception e) {
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
+////    TRANSFER BALANCE
+//    @PostMapping("/transfer")
+//    public ResponseEntity<String> transferMoney(@RequestBody TransactionDTO transaction){
+//        String responce = accountService.makeTransaction(transaction);
+//        return ResponseEntity.ok(responce);
+//    }
+//
+////    GET TRANSACTION HISTORY
+//    @GetMapping("/{accountId}/history")
+//    public ResponseEntity<List<TransactionDetails>> transactionHistory(@PathVariable Long accountId){
+//        try {
+//            List<TransactionDetails> details = accountService.getTransactionsByAccount(accountId);
+//            return ResponseEntity.ok(details);
+//        } catch (Exception e) {
+//            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+//        }
+//    }
 
     @PostMapping("")
     public ResponseEntity<Account> saveAccount(@RequestBody Account account){
