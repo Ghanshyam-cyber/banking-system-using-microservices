@@ -11,12 +11,12 @@ import java.util.List;
 @Setter
 @ToString
 public class UsersWithAccountDetails {
-    private Long id;
+    private Long userId;
     private String firstName;
     private String lastName;
     private String mail;
     private String currentCity;
     private String permanentCity;
-    private  List<Account> account;
+//    private  List<Account> account;
 
 }

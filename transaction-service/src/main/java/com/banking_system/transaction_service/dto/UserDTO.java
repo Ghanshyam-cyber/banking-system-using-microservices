@@ -1,5 +1,6 @@
 package com.banking_system.transaction_service.dto;
 
+
 import lombok.*;
 
 @NoArgsConstructor
@@ -7,9 +8,8 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-public class TransactionRequest {
-
-    private Long fromAccountId;
-    private Long toAccountId;
-    private Double amount;
+public class UserDTO {
+    private Long userId;
+    private String firstName;
+    private String lastName;
 }

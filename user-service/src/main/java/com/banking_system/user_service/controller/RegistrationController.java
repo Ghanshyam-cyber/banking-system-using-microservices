@@ -4,24 +4,22 @@ import com.banking_system.user_service.dto.Account;
 import com.banking_system.user_service.entities.User;
 import com.banking_system.user_service.dto.UserRegistration;
 import com.banking_system.user_service.repository.UserRepo;
-import com.banking_system.user_service.service.client.AccountClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+//import com.banking_system.user_service.service.client.AccountClient;
 
 @RestController
 @RequestMapping("users")
 public class RegistrationController {
     private UserRepo userRepo;
-    private AccountClient accountClient;
 
     @Autowired
-    public RegistrationController(UserRepo userRepo, AccountClient accountClient) {
+    public RegistrationController(UserRepo userRepo) {
         this.userRepo = userRepo;
-        this.accountClient = accountClient;
     }
 
     @PostMapping("/register")
@@ -39,12 +37,11 @@ public class RegistrationController {
         User savedUser = userRepo.save(user);
 
         Account account = new Account();
-        account.setAccountHolderId(savedUser.getId());
-        account.setBalance(userRegistration.getBalance());
-        account.setAccountType(userRegistration.getAccountType());
-        account.setAccountType(userRegistration.getAccountType());
+        account.setUserId(savedUser.getUserId());
+        account.setAmount(userRegistration.getAmount());
 
-        accountClient.createAccount(account);
+
+//        accountClient.createAccount(account);
 
         return ResponseEntity.ok("User & Account saved");
 

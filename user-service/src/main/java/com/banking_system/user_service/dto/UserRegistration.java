@@ -9,7 +9,7 @@ import lombok.*;
 @Setter
 @ToString
 public class UserRegistration {
-    private Long id;
+    private Long uesrId;
     private String firstName;
     private String lastName;
     private String mail;
@@ -20,9 +20,9 @@ public class UserRegistration {
     private String permanentAddress;
     private String permanentCity;
 //    private Long accountHolderId;
-    private double balance;
-    private String accountType;
-    private String activeType;
+    private Double amount;
+//    private String accountType;
+//    private String activeType;
 
 
 }

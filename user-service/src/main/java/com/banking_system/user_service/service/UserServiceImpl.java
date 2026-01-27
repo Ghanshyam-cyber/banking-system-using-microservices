@@ -4,9 +4,9 @@ import com.banking_system.user_service.dto.Account;
 import com.banking_system.user_service.entities.User;
 import com.banking_system.user_service.dto.UsersWithAccountDetails;
 import com.banking_system.user_service.repository.UserRepo;
-import com.banking_system.user_service.service.client.AccountClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+//import com.banking_system.user_service.service.client.AccountClient;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,12 +17,12 @@ public class UserServiceImpl implements UserService{
 
     private UserRepo userRepo;
 
-    private AccountClient accountClient;
+//    private AccountClient accountClient;
 
     @Autowired
-    public UserServiceImpl(UserRepo userRepo, AccountClient accountClient) {
+    public UserServiceImpl(UserRepo userRepo) {
         this.userRepo = userRepo;
-        this.accountClient = accountClient;
+//        this.accountClient = accountClient;
     }
 
 
@@ -44,25 +44,25 @@ public class UserServiceImpl implements UserService{
             try {
                 List<Account> account = new ArrayList<>();
                 try {
-                    account = accountClient.getAccByUserId(user.getId());
+//                    account = accountClient.getAccByUserId(user.getUserId());
                     // build response...
                 } catch (Exception e) {
-                    System.out.println("Error fetching account for userId: " + user.getId());
+                    System.out.println("Error fetching account for userId: " + user.getUserId());
                     e.printStackTrace();
                     return null;
                 }
                 UsersWithAccountDetails usersWithAccountDetails = new UsersWithAccountDetails();
-                usersWithAccountDetails.setId(user.getId());
+                usersWithAccountDetails.setUserId(user.getUserId());
                 usersWithAccountDetails.setFirstName(user.getFirstName());
                 usersWithAccountDetails.setLastName(user.getLastName());
                 usersWithAccountDetails.setMail(user.getMail());
                 usersWithAccountDetails.setCurrentCity(user.getCurrentCity());
                 usersWithAccountDetails.setPermanentCity(user.getPermanentCity());
-                usersWithAccountDetails.setAccount(account);
+//                usersWithAccountDetails.setAccount(account);
 
                 return usersWithAccountDetails;
             }catch (Exception e) {
-            System.out.println("Error fetching account for userId: " + user.getId());
+            System.out.println("Error fetching account for userId: " + user.getUserId());
             e.printStackTrace();
             return null;
         }
@@ -74,8 +74,10 @@ public class UserServiceImpl implements UserService{
 
 
     @Override
-    public User findById(Long theId) {
-        return userRepo.findById(theId).orElseThrow(()-> new RuntimeException("User not fount with id: " + theId));
+    public User findById(Long userId) {
+        System.out.println("Fetching user with ID: " + userId);
+        return userRepo.findById(userId)
+                .orElseThrow(()-> new RuntimeException("User not fount with id: " + userId));
     }
 
     @Override

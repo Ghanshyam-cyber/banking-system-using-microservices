@@ -14,18 +14,18 @@ import lombok.*;
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long accountNumber;
+    private Long accountId;
 
-    private Long accountHolderId;
+    private Long userId;
 
 //    private String accountHolderName;
+    @Column(nullable = false)
+    private Double amount = 0.0;
 
-    private double balance;
-
-    @Enumerated(EnumType.STRING)
-    private AccountType accountType;
-
-    @Enumerated(EnumType.STRING)
-    private ActiveType activeType;
+//    @Enumerated(EnumType.STRING)
+//    private AccountType accountType;
+//
+//    @Enumerated(EnumType.STRING)
+//    private ActiveType activeType;
 
 }

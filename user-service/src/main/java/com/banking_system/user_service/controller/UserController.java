@@ -1,15 +1,15 @@
 package com.banking_system.user_service.controller;
 
 
-import com.banking_system.user_service.dto.TransactionDTO;
 import com.banking_system.user_service.entities.User;
 import com.banking_system.user_service.dto.UsersWithAccountDetails;
 import com.banking_system.user_service.service.UserService;
-import com.banking_system.user_service.service.client.AccountClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+//import com.banking_system.user_service.dto.TransactionDTO;
+//import com.banking_system.user_service.service.client.AccountClient;
 
 import java.util.List;
 
@@ -18,30 +18,12 @@ import java.util.List;
 public class UserController {
 
     private UserService userService;
-    private AccountClient accountClient;
+//    private AccountClient accountClient;
 
     @Autowired
-    public UserController(UserService userService, AccountClient accountClient) {
+    public UserController(UserService userService) {
         this.userService = userService;
-        this.accountClient = accountClient;
-    }
-
-//    Balance Transfer
-    @PostMapping("/transfer")
-    public ResponseEntity<String> transferMoney(@RequestBody TransactionDTO transaction){
-        String response = accountClient.makeTransaction(transaction);
-        return ResponseEntity.ok(response);
-    }
-
-//    CHECK BALANCE
-    @GetMapping("/{userId}/balance")
-    public ResponseEntity<Double> checkBalance(@PathVariable Long userId){
-        try {
-            Double getBalance = accountClient.checkBalance(userId);
-            return ResponseEntity.ok(getBalance);
-        } catch (Exception e) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
+//        this.accountClient = accountClient;
     }
 
     @GetMapping("/details")
@@ -129,6 +111,24 @@ public class UserController {
 
 
 
+
+////    Balance Transfer
+//    @PostMapping("/transfer")
+//    public ResponseEntity<String> transferMoney(@RequestBody TransactionDTO transaction){
+//        String response = accountClient.makeTransaction(transaction);
+//        return ResponseEntity.ok(response);
+//    }
+
+//    CHECK BALANCE
+//    @GetMapping("/{userId}/balance")
+//    public ResponseEntity<Double> checkBalance(@PathVariable Long userId){
+//        try {
+//            Double getBalance = accountClient.checkBalance(userId);
+//            return ResponseEntity.ok(getBalance);
+//        } catch (Exception e) {
+//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//        }
+//    }
 
 
 

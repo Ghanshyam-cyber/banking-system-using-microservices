@@ -1,14 +1,14 @@
 package com.banking_system.account_service.controller;
 
-import com.banking_system.account_service.dto.TransactionDTO;
 import com.banking_system.account_service.entity.Account;
-import com.banking_system.account_service.dto.TransferDTO;
-import com.banking_system.account_service.entity.TransactionDetails;
 import com.banking_system.account_service.service.AccountService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+//import com.banking_system.account_service.dto.TransactionDTO;
+//import com.banking_system.account_service.dto.TransferDTO;
+//import com.banking_system.account_service.entity.TransactionDetails;
+import java.util.Collections;
 import java.util.List;
 
 @RestController
@@ -22,33 +22,15 @@ public class AccountController {
 
 //    getting list of accounts by user id
     @GetMapping("/user/{userId}")
-    public ResponseEntity<List<Account>> getAccountByUserId(@PathVariable Long userId){
+    public ResponseEntity<Account> getAccountByUserId(@PathVariable Long userId){
         try {
-            List<Account> newList = accountService.getAccountByUserId(userId);
-            return ResponseEntity.ok(newList);
+            Account account = accountService.getAccountByUserId(userId);
+            return ResponseEntity.ok(account);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
-
-////    TRANSFER BALANCE
-//    @PostMapping("/transfer")
-//    public ResponseEntity<String> transferMoney(@RequestBody TransactionDTO transaction){
-//        String responce = accountService.makeTransaction(transaction);
-//        return ResponseEntity.ok(responce);
-//    }
-//
-////    GET TRANSACTION HISTORY
-//    @GetMapping("/{accountId}/history")
-//    public ResponseEntity<List<TransactionDetails>> transactionHistory(@PathVariable Long accountId){
-//        try {
-//            List<TransactionDetails> details = accountService.getTransactionsByAccount(accountId);
-//            return ResponseEntity.ok(details);
-//        } catch (Exception e) {
-//            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-//        }
-//    }
 
     @PostMapping("")
     public ResponseEntity<Account> saveAccount(@RequestBody Account account){
@@ -64,11 +46,11 @@ public class AccountController {
     public ResponseEntity<Account> saveAccountWithUser(@RequestBody Account account){
         try {
             Account newAccount = new Account();
-            newAccount.setAccountNumber(account.getAccountNumber());
-            newAccount.setBalance(account.getBalance());
-            newAccount.setAccountHolderId(account.getAccountHolderId());
-            newAccount.setAccountType(account.getAccountType());
-            newAccount.setActiveType(account.getActiveType());
+            newAccount.setAccountId(account.getAccountId());
+            newAccount.setAmount(account.getAmount());
+            newAccount.setUserId(account.getUserId());
+//            newAccount.setAccountType(account.getAccountType());
+//            newAccount.setActiveType(account.getActiveType());
 
             accountService.create(account);
             return ResponseEntity.ok(newAccount);
@@ -97,15 +79,19 @@ public class AccountController {
         }
     }
 
-    @GetMapping("/user/balance/{userId}")
-    public ResponseEntity<Double> getBalanceByUserId(@PathVariable Long userId){
-        try {
-            Double checkBalance = accountService.checkBalance(userId);
-            return ResponseEntity.ok(checkBalance);
-        } catch (Exception e) {
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
+
+    @PutMapping("/debit/{accountId}/{amount}")
+    public void debit(@PathVariable Long accountId, @PathVariable Double amount){
+        accountService.debit(accountId, amount);
     }
+
+    @PutMapping("/credit/{accountId}/{amount}")
+    public void credit(@PathVariable Long accountId,
+                       @PathVariable Double amount) {
+
+        accountService.credit(accountId, amount);
+    }
+
 }
 
 
@@ -140,7 +126,23 @@ public class AccountController {
 
 
 
-
+////    TRANSFER amount
+//    @PostMapping("/transfer")
+//    public ResponseEntity<String> transferMoney(@RequestBody TransactionDTO transaction){
+//        String responce = accountService.makeTransaction(transaction);
+//        return ResponseEntity.ok(responce);
+//    }
+//
+////    GET TRANSACTION HISTORY
+//    @GetMapping("/{accountId}/history")
+//    public ResponseEntity<List<TransactionDetails>> transactionHistory(@PathVariable Long accountId){
+//        try {
+//            List<TransactionDetails> details = accountService.getTransactionsByAccount(accountId);
+//            return ResponseEntity.ok(details);
+//        } catch (Exception e) {
+//            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+//        }
+//    }
 
 
 

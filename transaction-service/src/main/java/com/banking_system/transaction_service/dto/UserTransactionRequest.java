@@ -1,41 +1,27 @@
-package com.banking_system.transaction_service.entity;
+package com.banking_system.transaction_service.dto;
 
-import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
-
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @ToString
-@Entity
-@Table(name = "transaction")
-public class Transaction {
-
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long  transactionId;
+public class UserTransactionRequest {
 
     private Long fromAccountId;
     private Long fromUserId;
     private String fromFirstName;
     private String fromLastName;
-
     private Long toAccountId;
-    private Long  toUserId;
+    private Long toUserId;
     private String toFirstName;
     private String toLastName;
-
-
     private Double amount;
 
     private String status;
-
     private String type;
-
     private LocalDateTime transactionDate;
 }
