@@ -1,6 +1,6 @@
 package com.banking_system.user_service.service;
 
-import com.banking_system.user_service.dto.Account;
+import com.banking_system.user_service.dto.AccountDTO;
 import com.banking_system.user_service.entities.User;
 import com.banking_system.user_service.dto.UsersWithAccountDetails;
 import com.banking_system.user_service.repository.UserRepo;
@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService{
         return users.stream().map(user -> {
 //                List<Account> account = accountClient.getAccByUserId(user.getId());
             try {
-                List<Account> account = new ArrayList<>();
+                List<AccountDTO> account = new ArrayList<>();
                 try {
 //                    account = accountClient.getAccByUserId(user.getUserId());
                     // build response...

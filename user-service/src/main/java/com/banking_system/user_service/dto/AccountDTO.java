@@ -7,7 +7,7 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-public class Account {
+public class AccountDTO {
     private Long accountId;
     private Long userId;
     private Double amount;
