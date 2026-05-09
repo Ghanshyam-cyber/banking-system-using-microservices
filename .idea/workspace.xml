@@ -5,55 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8b884ee-223e-4858-b8cb-f65104977e5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/dto/UserTransactionRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/service/client/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/controller/ManagerRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/controller/ManagerRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/Books.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/ManagerProfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/ManagerProfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/entity/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/security/SecurityConfig.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/security/SecurityConfig.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/service/ManagerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/service/ManagerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/service/ManagerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/java/com/LibraryMSystem/backEnd/service/ManagerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/backEnd/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Cards/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Cards/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Cards/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Cards/Registration.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Header/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Header/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Tables/BooksTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Tables/BooksTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Tables/UsersTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Components/Tables/UsersTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../LibraryManagementSystem/frondEnd/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/entity/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/repository/AccountRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/repository/AccountRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/service/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/banking_system/account_service/service/client/UserClient.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/controller/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/dto/TransactionRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/dto/AccountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/entity/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/entity/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/repostitory/TransactionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/repository/TransactionRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/service/TransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/service/client/AccountFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/service/client/AccountFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/service/impl/TransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/java/com/banking_system/transaction_service/service/impl/TransactionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/transaction-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/dto/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/dto/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/dto/UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/dto/UserRegistration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/dto/UsersWithAccountDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/dto/UsersWithAccountDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/service/client/AccountClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/banking_system/user_service/service/client/AccountClient.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,18 +57,36 @@
     &quot;Application.EurekaSeverApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.UserServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AccountServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaSeverApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.TransactionServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;test&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Fresher's/Projects/MIcroservices Projects/banking-system-with-microservices&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ghanshyam/Documents/banking-system-using-microservices&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -129,7 +102,29 @@
       <recent name="com.banking_system.user_service.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.TransactionServiceApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="AccountServiceApplication" value="STOPPED" />
+              <entry key="EurekaSeverApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AccountServiceApplication">
     <configuration name="AccountServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.banking_system.account_service.AccountServiceApplication" />
       <module name="account-service" />
@@ -182,8 +177,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AccountServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="account-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.banking_system.account_service.AccountServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.banking_system.api_gateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaSeverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eureka-sever" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.banking_system.eureka_sever.EurekaSeverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OptServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="OPTService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.banking_system.OPTService.OptServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TransactionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="transaction-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.banking_system.transaction_service.TransactionServiceApplication" />
       <extension name="coverage">
@@ -196,13 +221,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.banking_system.user_service.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.TransactionServiceApplication" />
+        <item itemvalue="Application.EurekaSeverApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.AccountServiceApplication" />
         <item itemvalue="Application.UserServiceApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.EurekaSeverApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -220,8 +253,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1750840750220</updated>
+      <workItem from="1778315830255" duration="939000" />
+      <workItem from="1778317801876" duration="226000" />
+      <workItem from="1778321684466" duration="925000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
@@ -246,5 +285,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$USER_HOME$" />
+    </ignored-roots>
   </component>
 </project>
